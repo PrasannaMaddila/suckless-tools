@@ -14,5 +14,27 @@ in the respective folder.
 
 NOTE: clean is an optional tag. It's convenient for me and does nothing harmful, so I just throw it in there. 
 
+The given Makefile will recursively install (cleanly) all the suckless tools in this directory. This is achieved by running 
+
+``` bash 
+make
+```
+
+in the suckless-tools directory. Similarly, 
+
+``` bash 
+make uninstall-all
+```
+
+uninstalls all tools. In case you wish to remove specific tools, say foo/ and bar/, pass them as space-separated arguments to the uninstall target as follows: 
+
+``` bash 
+make uninstall DIRS=foo bar
+```
+
+### Troubleshooting
+
+A common cause of the make not installing is not having enough permissions to install. While this may be bad advice, _sudo make_ generally does the trick. 
+
 
 
