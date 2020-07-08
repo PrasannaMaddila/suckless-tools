@@ -7,7 +7,7 @@ The current build is centered around the hex-color #2e3440; CSS calls this DarkS
 I will be adding a simple MakeFile to automate the build process, purely for convenience. However, each package has its own Makefile and can be individually built/installed using the 
 
 ``` bash 
-sudo make _(clean)_ install; 
+sudo make (clean) install; 
 ```
 
 in the respective folder. 
