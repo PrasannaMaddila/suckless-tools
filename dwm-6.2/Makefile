@@ -21,6 +21,10 @@ ${OBJ}: config.h config.mk
 
 config.h:
 	cp config.def.h $@
+	# Places all keybindings defined in 
+	# commands-list.txt for easy viewing.
+	$(bash list-commands.sh); 
+	$(cat commands-list.txt);
 
 dwm: ${OBJ}
 	${CC} -o $@ ${OBJ} ${LDFLAGS}
@@ -48,4 +52,4 @@ uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/dwm\
 		${DESTDIR}${MANPREFIX}/man1/dwm.1
 
-.PHONY: all options clean dist install uninstall
+PHONY: all options clean dist install uninstall 

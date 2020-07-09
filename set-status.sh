@@ -19,7 +19,7 @@ while true; do
 	if [[ $battery_cap -lt $threshold ]]
 	then 
 		echo "Battery capacity low. Locking screen."; 
-		slock; 
+		slock -m "Please plug your laptop in.";  
 	fi	
 
 	# Getting battery status as well. 

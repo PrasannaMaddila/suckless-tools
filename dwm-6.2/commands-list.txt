@@ -1,0 +1,44 @@
+	/* modifier                     key        function        argument */
+	
+	/* Keyboard shortcuts for backlight and volume */
+	  NULL  	       AudioMute,            spawn, 	     {.v= mute_vol}
+	  NULL  	       AudioLowerVolume,     spawn, 	     {.v= dec_vol}
+	  NULL  	       AudioRaiseVolume,     spawn, 	     {.v= inc_vol}
+	  NULL 		       MonBrightnessDown,    spawn,         {.v= dec_light} 
+	  NULL 		       MonBrightnessUp,      spawn,         {.v= inc_light} 
+
+	/* Keyboard shortcuts for programs. */
+	  Alt   +Shift      	            f,      spawn,          {.v=cmd_term_file}
+	  Alt   +Shift     		    b,	   spawn,	   {.v= browser} },				       
+	  Alt   +Shift      	            t,      spawn,          {.v=g_term_file}
+	  Alt                               p,      spawn,          {.v = dmenucmd } 
+	  Alt   +Shift                      Return, spawn,          {.v = termcmd } 
+	  Alt   +Shift      		    l,      spawn, 	   {.v=scrlock} 
+
+	/* Keyboard shortcuts for windowing actions. */
+	  Alt                               b,      togglebar,      {0} 
+	  Alt                               j,      focusstack,     {.i = +1 } 
+	  Alt                               k,      focusstack,     {.i = -1 } 
+	  Alt                               i,      incnmaster,     {.i = +1 } 
+	  Alt                               d,      incnmaster,     {.i = -1 } 
+	  Alt                               h,      setmfact,       {.f = -0.05} 
+	  Alt                               l,      setmfact,       {.f = +0.05} 
+	  Alt                               Return, zoom,           {0} 
+	  Alt                               Tab,    view,           {0} 
+	  Alt   +Shift                      c,      killclient,     {0} 
+	  Alt                               t,      setlayout,      {.v = &layouts[0]} 
+	  Alt                               f,      setlayout,      {.v = &layouts[1]} 
+	  Alt                               m,      setlayout,      {.v = &layouts[2]} 
+	  Alt                               space,  setlayout,      {0} 
+	  Alt   +Shift                      space,  togglefloating, {0} 
+	  Alt                               0,      view,           {.ui = ~0 } 
+	  Alt   +Shift                      0,      tag,            {.ui = ~0 } 
+	  Alt                               comma,  focusmon,       {.i = -1 } 
+	  Alt                               period, focusmon,       {.i = +1 } 
+	  Alt   +Shift                      comma,  tagmon,         {.i = -1 } 
+	  Alt   +Shift                      period, tagmon,         {.i = +1 } 
+	TAGKEYS(                            1                       0)
+	TAGKEYS(                            2                       1)
+	TAGKEYS(                            3                       2)
+	TAGKEYS(                            4                       3)
+	  Alt   +Shift                      q,      quit,           {0} 
