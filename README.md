@@ -12,7 +12,7 @@ sudo make (clean) install;
 
 in the respective folder. 
 
-NOTE: clean is an optional tag. It's convenient for me and does nothing harmful, so I just throw it in there. 
+*NOTE*  clean is an optional tag. It's convenient for me and does nothing harmful, so I just throw it in there. 
 
 The given Makefile will recursively install (cleanly) all the suckless tools in this directory. This is achieved by running 
 
@@ -34,7 +34,12 @@ make uninstall DIRS=foo bar
 
 A great tutorial on using dwm is given at the official [suckless site](https://dwm.suckless.org/tutorial/). I do not claim ownership for any of this material (or most of the code for that matter); suckless.org is awesome and I love their work. 
 
-*NOTE* I do have my own shortcuts in the _dwm-version/config.h_, like `Alt+Shift+b` for Chrome and so on. You might want to poke around there to change things if everything isn't working as intended.
+*NOTE*  I do have my own shortcuts in the _dwm-version/config.h_, like `Alt+Shift+b` for Chrome and so on. You might want to poke around there to change things if everything isn't working as intended.
+
+### dwm/list-commands.sh
+
+In the dwm-_version_ folder, you will find a _list-commands.sh_ file. Running it will create a _commands-list.txt_ file which lists out all the keybindings that the current build has. Its also been processed a little (Like replacing _MODKEY_ with _Alt_ and so on) so that you can easily see what to play around with. The script is also supposed to be run everytime you make changes to config.h, so it will always be up to date. 
+
 
 ### Status Bar 
 
