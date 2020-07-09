@@ -55,7 +55,7 @@ This repo also contains _set-status.sh_, which is the script you need to add to 
 exec dwm
 ```
 
-By default, set-status updates the status every 30 seconds (I don't check it that often, sorry). You can change this by changing how long the sleep command executes in the script. It's also formatted to fit with my aesthetic, so feel free to modify your copy to your liking.  
+By default, set-status updates the status every 30 seconds (I don't check it that often, sorry). You can change this by changing how long the sleep command executes in the script. It's also formatted to fit with my aesthetic, so feel free to modify your copy to your liking. Another nice feature of this status script is that it locks your screen if your battery goes under 5%. This is an explicit reminder that you need that your laptop is dying, and you need to plug it in.  
 
 ### Troubleshooting
 
