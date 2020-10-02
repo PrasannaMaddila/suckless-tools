@@ -1,0 +1,10 @@
+--- config.def.h	2020-04-17 13:37:50.926942626 +0200
++++ config.def.h	2020-04-25 15:24:56.722215722 +0200
+@@ -2,6 +2,7 @@
+ 
+ /* appearance */
+ static const unsigned int borderpx  = 1;        /* border pixel of windows */
++static const int gappx     = 5;                 /* gaps between windows */
+ static const unsigned int snap      = 32;       /* snap pixel */
+ static const int showbar            = 1;        /* 0 means no bar */
+ static const int topbar             = 1;        /* 0 means bottom bar */

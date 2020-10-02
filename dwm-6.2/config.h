@@ -4,15 +4,17 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
+static const int vertpad            = 0;       /* vertical padding of bar */
+static const int sidepad            = 0;       /* horizontal padding of bar */
 static const unsigned int gappx     = 5; 	/*Gap between windows*/ 
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=9" };
-static const char dmenufont[]       = "monospace:size=9";
+static const char *fonts[]          = { "Ubuntu Mono:size=10","monospace:size=9" };
+static const char dmenufont[]       = "Ubuntu Mono:size=10";
 static const char col_gray1[]       = "#2e3440";
-static const char col_gray2[]       = "#444444";
+static const char col_gray2[]       = "#808080";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#2e3440";
@@ -68,7 +70,7 @@ static const char *dec_light[] = {"light", "-U", "5"};
 static const char *mute_vol[]  = {"amixer", "-q", "sset", "Master", "toggle", NULL}; 
 static const char *inc_vol[]   = {"amixer", "-q", "sset", "Master", "5%+", NULL}; 
 static const char *dec_vol[]   = {"amixer", "-q", "sset", "Master", "5%-", NULL}; 
-static const char *cmd_term_file[] = { "termite", "-e", "vifm", NULL};
+static const char *cmd_term_file[] = { "termite", "-e", "ranger", NULL};
 static const char *g_term_file[] = { "thunar", NULL}; 
 static const char *scrlock[]   = { "slock", NULL }; 
 
